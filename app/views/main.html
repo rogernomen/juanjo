@@ -1,0 +1,32 @@
+<div class="jumbotron">
+  <h1>'Allo, 'Allo!</h1>
+  <p class="lead">
+    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+    Always a pleasure scaffolding your apps.
+  </p>
+  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+</div>
+
+<div class="row marketing">
+    <div class="row">
+      <div class="col-md12 col-xs-12">
+          <h3>Alertas</h3>
+          <table class="table" ng-cloak>
+              <tr>
+                  <th>ID</th>
+                  <th>LONGITUD</th>
+                  <th>LATITUD</th>
+                  <th>USUARIO</th>
+              </tr>
+
+              <tr ng-repeat="item in alerts">
+                  <td></td>
+                  <td>{{item.longitude}}</td>
+                  <td>{{item.latitude}}</td>
+                  <td>{{item.user.name}}</td>
+              </tr>
+          </table>
+
+      </div>
+    </div>
+</div>
